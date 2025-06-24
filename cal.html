@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My calculator</title>
+        <link rel="stylesheet" href="cal.css">
+    </head>
+
+    <body>
+        <table id="calculator">
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="result">
+                </td>
+                <td>
+                    <input type="button" value="C"  onclick="clearDisplay()" id="clear">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><input type="button" value="1" onclick="appendValue('1')"></td>
+                <td><input type="button" value="2" onclick="appendValue('2')"></td>
+                <td><input type="button" value="3" onclick="appendValue('3')"></td>
+                <td><input type="button" value="/" onclick="appendValue('/')" id="slash"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="appendValue('4')"></td>
+                <td><input type="button" value="5" onclick="appendValue('5')"></td>
+                <td><input type="button" value="6" onclick="appendValue('6')"></td>
+                <td><input type="button" value="*" onclick="appendValue('*')" id="star"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="appendValue('7')"></td>
+                <td><input type="button" value="8" onclick="appendValue('8')"></td>
+                <td><input type="button" value="9" onclick="appendValue('9')"></td>
+                <td><input type="button" value="-" onclick="appendValue('-')" id="minus"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="appendValue('0')"></td>
+                <td><input type="button" value="+" onclick="appendValue('+')" id="plus"></td>
+                <td><input type="button" value="=" onclick="calculate()" id="equal"></td>
+                <td><input type="button" value="." onclick="appendValue('.')" id="dot"></td>
+                
+            </tr>
+
+
+        </table>
+
+        <script src="cal.js"></script>
+        
+    </body>
+</html>
